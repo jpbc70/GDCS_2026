@@ -7,7 +7,7 @@
 :width: 600px
 ```
 
-Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados semanas.
+Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados por semanas.
 
 ---
 
