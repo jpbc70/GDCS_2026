@@ -2,21 +2,37 @@ name: Deploy MyST Site
 on:
   push:
     branches: [main]
+  workflow_dispatch: # Permite-te correr o processo manualmente se quiseres
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-      - run: npm install -g mystmd
-      - run: myst build --site
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install MyST
+        run: npm install -g mystmd
+
+      - name: Build Site
+        run: myst build --site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # O MyST CLI gera o site nesta pasta específica
           path: _build/site
+
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
