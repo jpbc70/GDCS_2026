@@ -10,7 +10,7 @@ site:
   template: book-theme
   # A secção 'nav' é obrigatória para o site existir
   nav:
-    - file: intro.md
+    - file: index.md
     - file: T1.ipynb
   options:
     launch_buttons:
