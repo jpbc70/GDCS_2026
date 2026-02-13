@@ -1,4 +1,5 @@
 version: 1
+
 project:
   id: c8e7979a-2238-4a0b-b3fa-0572ada9b3cb
   title: Geometria Diferencial de Curvas e Superfícies
@@ -7,12 +8,13 @@ project:
 
 site:
   template: book-theme
-  # IMPORTANTE: O base_url tem de ser o nome do seu repositório entre barras
-  base_url: /GDCS_2026/
-  nav:
-    - file: index.md
-    - file: T1.ipynb
   options:
+    base_url: /GDCS_2026/
+    nav:
+      - title: "Início"
+        url: index.html
+      - title: "T1"
+        url: T1.html
     launch_buttons:
       thebe: true
       binderhub_url: https://mybinder.org
