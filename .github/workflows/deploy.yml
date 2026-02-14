@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Publicar o site inteiro, não só a pasta public/
+          # Publicar o site completo
           path: _build/site
 
       - name: Deploy to GitHub Pages
