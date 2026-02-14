@@ -5,16 +5,8 @@ project:
   title: Geometria Diferencial de Curvas e Superfícies
   authors:
     - name: João Cabral
-
   toc:
     - file: index.md
-    - file: T1.ipynb
 
 site:
   template: book-theme
-  thebe:
-    selector: "pre"
-    binder:
-      provider: github
-      repo: jpbc70/GDCS_2026
-      ref: main

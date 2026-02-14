@@ -14,10 +14,10 @@ Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados
 ## 📅 Planeamento Semanal
 
 ### Parte 1: Curvas 
-* **Semana 1:** (./T1.ipynb)
+* **Semana 1:** - [T1](lite/lab/index.html?path=files/T1.ipynb)
 
 
 ### Parte 2: Superfícies
 
 
-> **Nota:** Para correr o código de python, pressione o ícone do "foguete" (Binder) no topo de cada página.
+> **Nota:** Para correr o código de Python, usem a versão executável (JupyterLite) no link de cada semana.

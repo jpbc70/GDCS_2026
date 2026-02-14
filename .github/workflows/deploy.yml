@@ -1,4 +1,4 @@
-name: Deploy MyST Site
+name: Deploy MyST homepage + JupyterLite lessons
 
 on:
   push:
@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,13 +31,28 @@ jobs:
           npm i -g mystmd@latest
           myst --version
 
-      - name: Build site (clean + strict)
+      - name: Build MyST site
         env:
-          # GitHub Pages project site: https://jpbc70.github.io/GDCS_2026/
           BASE_URL: /GDCS_2026
         run: |
           myst clean --yes || true
           myst build --html --strict
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install JupyterLite
+        run: |
+          python -m pip install --upgrade pip
+          pip install jupyterlite jupyterlite-pyodide-kernel
+
+      - name: Build JupyterLite under /lite
+        run: |
+          jupyter lite build --output-dir _build/html/lite
+          mkdir -p _build/html/lite/files
+          cp -f *.ipynb _build/html/lite/files/ || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -45,7 +60,7 @@ jobs:
           path: _build/html
 
   deploy:
-    needs: build-deploy
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
