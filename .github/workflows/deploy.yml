@@ -32,8 +32,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # O MyST coloca o site estático aqui
-          path: _build/site/public
+          # Publicar o site inteiro, não só a pasta public/
+          path: _build/site
 
       - name: Deploy to GitHub Pages
         id: deployment
