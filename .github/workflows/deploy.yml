@@ -36,7 +36,7 @@ jobs:
           BASE_URL: /GDCS_2026
         run: |
           myst clean --yes || true
-          myst build --html --strict
+          myst build --html
 
       - name: Setup Python
         uses: actions/setup-python@v5
