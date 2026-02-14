@@ -34,7 +34,7 @@ jobs:
 
       - name: Build MyST site
         env:
-          BASE_URL: /GDCS_2026
+          BASE_URL: /GDCS_2026/
         run: |
           myst clean --yes || true
           myst build --html
