@@ -14,7 +14,7 @@ Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados
 ## 📅 Planeamento Semanal
 
 ### Parte 1: Curvas 
-* **Semana 1:** - [T1](/lite/lab/index.html?path=T1.ipynb)
+* **Semana 1:** - [T1](https://jpbc70.github.io/GDCS_2026/lite/lab/index.html?path=T1.ipynb)
 
 
 ### Parte 2: Superfícies
