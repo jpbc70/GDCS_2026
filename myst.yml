@@ -5,16 +5,15 @@ project:
   title: Geometria Diferencial de Curvas e Superfícies
   authors:
     - name: João Cabral
+
   toc:
     - file: index.md
     - file: T1.ipynb
 
 site:
   template: book-theme
-
   thebe:
-    # Estes selectors costumam apanhar células de notebooks no book-theme
-    selector: ".cell, .cell_input, pre"
+    selector: "pre"
     binder:
       provider: github
       repo: jpbc70/GDCS_2026
