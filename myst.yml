@@ -12,14 +12,3 @@ project:
 
 site:
   template: book-theme
-  options:
-    base_url: /GDCS_2026/
-
-    # Execução no browser (Thebe)
-    thebe: true
-
-    # Kernel remoto via Binder
-    binder:
-      provider: github
-      repo: jpbc70/GDCS_2026
-      ref: main
