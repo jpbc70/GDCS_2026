@@ -21,6 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # --- Build MyST homepage (and any MyST pages you keep) ---
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -38,6 +39,7 @@ jobs:
           myst clean --yes || true
           myst build --html
 
+      # --- Build JupyterLite under /lite with indexed content ---
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -48,12 +50,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install jupyterlite jupyterlite-pyodide-kernel
 
-      - name: Build JupyterLite under /lite
+      - name: Prepare JupyterLite content
         run: |
-          jupyter lite build --output-dir _build/html/lite
-          mkdir -p _build/html/lite/files
-          cp -f *.ipynb _build/html/lite/files/ || true
+          rm -rf content
+          mkdir -p content
+          cp -vf ./*.ipynb content/ || true
+          echo "=== JupyterLite content ==="
+          ls -la content || true
 
+      - name: Build JupyterLite into MyST output folder
+        run: |
+          jupyter lite build --contents content --output-dir _build/html/lite
+
+      # --- Publish everything (MyST at /, JupyterLite at /lite) ---
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
