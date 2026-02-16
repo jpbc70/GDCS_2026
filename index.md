@@ -20,4 +20,4 @@ Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados
 ### Parte 2: Superfícies
 
 
-> **Nota:** Para correr o código de Python, usem a versão executável (JupyterLite) no link de cada semana.
+> **Nota:** Para correr uma célula de código Python, deve clicar numa linha de código colocando o cursor dentro da célula. De seguinte faça Shift+Enter.
