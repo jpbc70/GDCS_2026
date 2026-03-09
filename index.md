@@ -18,9 +18,8 @@ Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados
                 - [T2](lite/lab/index.html?path=T2.ipynb)
 * **Semana 2:** - [T3](lite/lab/index.html?path=T3.ipynb)
 * **Semana 3:** - [T4](lite/lab/index.html?path=T4.ipynb)
-* **Semana 4:** - [T5](lite/lab/index.html?path=T5.ipynb)
 
 ### Parte 2: Superfícies
-
+* **Semana 4:** - [T5](lite/lab/index.html?path=T5.ipynb)
 
 > **Nota:** Para correr uma célula de código Python, deve clicar numa linha de código colocando o cursor dentro da célula. De seguinte faça Shift+Enter.
