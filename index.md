@@ -16,8 +16,9 @@ Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados
 ### Parte 1: Curvas 
 * **Semana 1:** - [T1](lite/lab/index.html?path=T1.ipynb)
                 - [T2](lite/lab/index.html?path=T2.ipynb)
-* **Semana 2:** - [T3](lite/lab/index.html?path=T2.ipynb)
-* **Semana 3:** - [T4](lite/lab/index.html?path=T2.ipynb)
+* **Semana 2:** - [T3](lite/lab/index.html?path=T3.ipynb)
+* **Semana 3:** - [T4](lite/lab/index.html?path=T4.ipynb)
+* **Semana 4:** - [T5](lite/lab/index.html?path=T5.ipynb)
 
 ### Parte 2: Superfícies
 
