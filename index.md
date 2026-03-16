@@ -21,5 +21,5 @@ Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados
 
 ### Parte 2: Superfícies
 * **Semana 4:** - [T5](lite/lab/index.html?path=T5.ipynb)
-                - [T6](lite/lab/index.html?path=T6.ipynb)
+* **Semana 5:** - [T6](lite/lab/index.html?path=T6.ipynb)
 > **Nota:** Para correr uma célula de código Python, deve clicar numa linha de código colocando o cursor dentro da célula. De seguinte faça Shift+Enter.
