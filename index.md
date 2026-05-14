@@ -28,7 +28,7 @@ Bem-vindos ao site da disciplina. Aqui encontram os slides das aulas organizados
 * **Semana 9:** - [T10](lite/lab/index.html?path=T10.ipynb)
 * **Semana 10 e 11:** - [T11](lite/lab/index.html?path=T11.ipynb)
 * **Semana 12:** - [T12](lite/lab/index.html?path=T12.ipynb)
-**Semana 13 e 14:** - [T13](lite/lab/index.html?path=T13.ipynb)
+* **Semana 13 e 14:** - [T13](lite/lab/index.html?path=T13.ipynb)
 
 
 > **Nota:** Para correr uma célula de código Python, deve clicar numa linha de código colocando o cursor dentro da célula. De seguinte faça Shift+Enter.
